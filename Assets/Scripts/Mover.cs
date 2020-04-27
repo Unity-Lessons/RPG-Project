@@ -7,6 +7,7 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] Transform target;
     private NavMeshAgent agent;
+    private Ray lastRay;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,19 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = target.position;
+        if (Input.GetMouseButtonDown(0))
+        {
+            MoveToCursor();
+        }
+    }
+
+    void MoveToCursor()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        bool hasHit = Physics.Raycast(ray, out hit);
+
+        if (hasHit)
+            agent.destination = hit.point;
     }
 }
