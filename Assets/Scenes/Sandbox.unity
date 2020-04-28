@@ -400,31 +400,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &480750366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 211558517850537690, guid: 6904b0606935b1748a8a9d91f3f09ff6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7793522344548440947}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &480750367
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480750366}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 629331bf8c2336b428f1287b17dc0886, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &480750370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 932044123980162986, guid: 6904b0606935b1748a8a9d91f3f09ff6,
@@ -2244,12 +2219,12 @@ PrefabInstance:
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.93000007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
@@ -2259,17 +2234,17 @@ PrefabInstance:
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611557936858982669, guid: da3f42fdaf31d734e80d35f46fb62253,
         type: 3}
@@ -2303,31 +2278,31 @@ PrefabInstance:
       objectReference: {fileID: 480750370}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.26219094
+      value: 0.30294907
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.059621066
+      value: -0.0117527135
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.016197493
+      value: 0.0036986573
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9630363
+      value: 0.9529271
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8248136
+      value: 0.16307333
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.162406
+      value: 6.511057
       objectReference: {fileID: 0}
     - target: {fileID: 1894713227, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.702899
+      value: -6.824939
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da3f42fdaf31d734e80d35f46fb62253, type: 3}
