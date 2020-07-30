@@ -26,9 +26,8 @@ public class Mover : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
-        {
             MoveToCursor();
-        }
+        
 
         UpdateAnimator();
     }
