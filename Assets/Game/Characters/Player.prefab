@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 932044123980162986}
   - component: {fileID: 2768601043411490346}
-  - component: {fileID: 480750372}
   - component: {fileID: 480750371}
   - component: {fileID: 480750367}
+  - component: {fileID: 4141010580513983761}
+  - component: {fileID: 480750372}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -49,6 +50,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,19 +76,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &480750372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211558517850537690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2257e4a8351d67f4ab6fd096b34ebff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!195 &480750371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -127,6 +118,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4141010580513983761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211558517850537690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffba6feb296c1294abe5a623e7a8e79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &480750372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211558517850537690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2257e4a8351d67f4ab6fd096b34ebff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1001 &7793522345324211215
 PrefabInstance:
   m_ObjectHideFlags: 0

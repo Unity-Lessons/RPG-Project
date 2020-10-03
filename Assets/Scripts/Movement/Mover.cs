@@ -25,20 +25,7 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //    MoveToCursor();
-
         UpdateAnimator();
-    }
-
-    private void MoveToCursor()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-
-        if (hasHit)
-            GetPoint(hit.point);
     }
 
     public void GetPoint(Vector3 destination)
