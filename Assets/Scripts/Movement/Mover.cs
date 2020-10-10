@@ -8,7 +8,7 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour
     {
         [SerializeField] Transform target;
-        private NavMeshAgent agent;
+        private NavMeshAgent navMeshAgent;
         private Animator anim;
         //private Ray lastRay;
 
@@ -20,8 +20,8 @@ namespace RPG.Movement
         // Start is called before the first frame update
         void Start()
         {
-            agent = GetComponent<NavMeshAgent>();
             anim = GetComponent<Animator>();
+            navMeshAgent = GetComponent<NavMeshAgent>();
         }
 
         // Update is called once per frame
@@ -30,14 +30,20 @@ namespace RPG.Movement
             UpdateAnimator();
         }
 
-        public void GetPoint(Vector3 destination)
+        public void MoveTo(Vector3 destination)
         {
-            agent.destination = destination;
+            navMeshAgent.destination = destination;
+            navMeshAgent.isStopped = false;
+        }
+
+        public void Stop()
+        {
+            navMeshAgent.isStopped = true;
         }
 
         private void UpdateAnimator()
         {
-            velocity = agent.velocity;
+            velocity = navMeshAgent.velocity;
             localVelocity = transform.InverseTransformDirection(velocity);
             speed = localVelocity.z;
 
