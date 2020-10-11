@@ -22,19 +22,22 @@ namespace RPG.Combat
             if (target != null)
             {
                 bool isInRange = Vector3.Distance(target.position, transform.position) < weaponRange;
-                moverScript.MoveTo(target.position);
 
-                if (isInRange)
-                {
+                if (!isInRange)
+                    moverScript.MoveTo(target.position);
+                else
                     moverScript.Stop();
-                    target = null;
-                }
             }
         }
 
         public void Attack(CombatTarget combatTarget)
         {
             target = combatTarget.transform;
+        }
+
+        public void Cancel()
+        {
+            target = null;
         }
     }
 }
